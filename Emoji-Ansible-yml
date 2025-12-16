@@ -7,7 +7,7 @@
     path: /user/share/nginx/html
     project_name: Emoji_Memory_Game
   tasks:
-  - name: isntall nginx
+  - name: install nginx
     ansible.builtin.dnf:
       name: "{{web_server}}"
       state: present
@@ -16,7 +16,7 @@
       name: "{{web_server}}"
       state: started 
       enabled: yes 
-  - name: instal git 
+  - name: install git 
     ansible.builtin.dnf:
       name: git 
       state: present
