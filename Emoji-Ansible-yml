@@ -1,0 +1,27 @@
+---
+- name: Emoji Game Fully Automated Deployment
+  hosts: localhost
+  become: yes
+  vars:
+    web_server: nginx
+    path: /user/share/nginx/html
+    project_name: Emoji_Memory_Game
+  tasks:
+  - name: isntall nginx
+    ansible.builtin.dnf:
+      name: "{{web_server}}"
+      state: present
+  - name: start nginx 
+    ansible.builtin.systemd_service:
+      name: "{{web_server}}"
+      state: started 
+      enabled: yes 
+  - name: instal git 
+    ansible.builtin.dnf:
+      name: git 
+      state: present
+  - name: clone emoji-game repo
+    ansible.builtin.git:
+      repo: 'https://github.com/Shivamgarud8/Emoji_Memory_Game.git'
+      dest: "{{path}}/{{project_name}}"
+      
