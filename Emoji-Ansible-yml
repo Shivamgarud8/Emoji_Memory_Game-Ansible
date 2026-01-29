@@ -4,7 +4,7 @@
   become: yes
   vars:
     web_server: nginx
-    path: /user/share/nginx/html
+    path: /usr/share/nginx/html
     project_name: Emoji_Memory_Game
   tasks:
   - name: install nginx
