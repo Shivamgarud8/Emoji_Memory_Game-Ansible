@@ -11,7 +11,7 @@ The **Emoji Game** is a fun, interactive game that challenges users to guess or 
 This project automates the deployment of the Emoji Game application on any Linux machine using **Ansible**, making setup fast, easy, and repeatable.
 
 With this automation, you don’t need to manually install dependencies or configure the environment—Ansible handles everything for you.  
-
+![output](images/a.png)
 ---
 
 ## 🛠️ Features
