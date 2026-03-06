@@ -34,7 +34,7 @@ With this automation, you don’t need to manually install dependencies or confi
 
 - **Amazon Linux** – Target deployment OS
 - **NGINX** – Optional web interface for the game
-- **Git** – Clone the repository
+- **Git** – Clone the repository.
 
 ---
 
